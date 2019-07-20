@@ -1,0 +1,11 @@
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/bin/Debug/netcoreapp2.1/cstutorial.deps.json
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/bin/Debug/netcoreapp2.1/cstutorial.runtimeconfig.json
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/bin/Debug/netcoreapp2.1/cstutorial.runtimeconfig.dev.json
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/bin/Debug/netcoreapp2.1/cstutorial.dll
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/bin/Debug/netcoreapp2.1/cstutorial.pdb
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/Debug/netcoreapp2.1/cstutorial.csprojAssemblyReference.cache
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/Debug/netcoreapp2.1/cstutorial.csproj.CoreCompileInputs.cache
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/Debug/netcoreapp2.1/cstutorial.AssemblyInfoInputs.cache
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/Debug/netcoreapp2.1/cstutorial.AssemblyInfo.cs
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/Debug/netcoreapp2.1/cstutorial.dll
+/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/Debug/netcoreapp2.1/cstutorial.pdb
