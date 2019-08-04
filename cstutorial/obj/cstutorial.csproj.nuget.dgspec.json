@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sumitramanga/Desktop/cstutorial/cstutorial/cstutorial.csproj": {}
+    "/Users/sumitramanga/Desktop/Work/cstutorial/cstutorial/cstutorial.csproj": {}
   },
   "projects": {
-    "/Users/sumitramanga/Desktop/cstutorial/cstutorial/cstutorial.csproj": {
+    "/Users/sumitramanga/Desktop/Work/cstutorial/cstutorial/cstutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sumitramanga/Desktop/cstutorial/cstutorial/cstutorial.csproj",
+        "projectUniqueName": "/Users/sumitramanga/Desktop/Work/cstutorial/cstutorial/cstutorial.csproj",
         "projectName": "cstutorial",
-        "projectPath": "/Users/sumitramanga/Desktop/cstutorial/cstutorial/cstutorial.csproj",
+        "projectPath": "/Users/sumitramanga/Desktop/Work/cstutorial/cstutorial/cstutorial.csproj",
         "packagesPath": "/Users/sumitramanga/.nuget/packages/",
-        "outputPath": "/Users/sumitramanga/Desktop/cstutorial/cstutorial/obj/",
+        "outputPath": "/Users/sumitramanga/Desktop/Work/cstutorial/cstutorial/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
