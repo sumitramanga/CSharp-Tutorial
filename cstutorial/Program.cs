@@ -171,7 +171,7 @@ namespace cstutorial
             // it's called in the Main method.
 
             // Passing through values name and age
-            SayHi("Priya", 21);
+            // SayHi("Priya", 21);
             // Result = "Hello Priya21"
 
 
@@ -214,10 +214,101 @@ namespace cstutorial
             // Result = 19
 
 
-            Console.WriteLine(GetDay(4));
+            //Console.WriteLine(GetDay(4));
             // Result = Thursday
+
+            // WHILE LOOPS -----------------------------------------------------
+
+            // - Loop over block of code while a certain condition is true
+            // - Loop through repeatly while the condition is true
+
+            int indexNum = 1;
+
+            // - Speific a condition like an if statement when checking a conditon
+            // - Continusly executing it until condiiton is false
+
+            while(indexNum <= 5)
+            {
+                Console.WriteLine(indexNum);
+              
+                // Increment indexNum
+                indexNum++;
+
+                // Result = 1 2 3 4 5
+                // Checks it once which is equal to 1, logs out the number, then
+                // increments the value. Then checks if the value is true again
+                // logs out the number already stored (which is 2) then
+                // increments the value again.
+                // Since the number has been incremented to 6, when the while
+                // checks the condition it is false, therefore nothing will
+                // happen.
+            }
+
+            // This loop can get caught in an infinte loop if the coniditon
+            // never changes
+
+            // Do while loop
+
+            // - Opposite of while loop
+            // - Run the code we want to then check the condition
+
+            int indexNum2 = 6;
+
+            do
+            {
+                //Console.WriteLine(indexNum2);
+                indexNum2++;
+            } while (indexNum2 <= 5);
+
+            // Result = 6
+            // This will console write due to the condition being checked after
+            // executing the desired code
+
+            // BUILD A GUESSING GAME -------------------------------------------
+
+            string secretWord = "Bunnies";
+            string usersAnswer = "";
+            int guessCount = 0;
+            int guessLimit = 5;
+            bool outOfGuesses = false;
+
+            // Keeps asking user if the guess is wrong and they're not out of
+            // guesses
+            while (usersAnswer != secretWord && !outOfGuesses)
+            {
+                // if the guessCount is under the limit (5) then prompt question
+                if (guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the secret word: ");
+                    usersAnswer = Console.ReadLine();
+                    guessCount++;
+                }
+                // else the outOfGuesses is true
+                else { 
+                    outOfGuesses = true;
+                }
+
+            }
+
+            // If outOfGuesses is true/the user is out of guesses, then error out
+            if (outOfGuesses)
+            {
+                Console.WriteLine("Sorry, you've run out of guesses");
+            }
+            // If the user wins, then congratulate
+            else
+            {
+                Console.WriteLine("You got it!");
+            }
+
+            // Challenge - use a do while loop to build this game
+
+            // FOR LOOPS -------------------------------------------------------
+
+
+
         }
-        // Main Method ends ======
+        // Main Method ends ====================================================
 
 
 
@@ -319,10 +410,7 @@ namespace cstutorial
                     break;
             }
 
-
             return dayName;
-
-            // WHILE LOOPS -----------------------------------------------------
 
         }
     }
