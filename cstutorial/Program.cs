@@ -229,7 +229,7 @@ namespace cstutorial
 
             while(indexNum <= 5)
             {
-                Console.WriteLine(indexNum);
+                //Console.WriteLine(indexNum);
               
                 // Increment indexNum
                 indexNum++;
@@ -264,49 +264,60 @@ namespace cstutorial
             // This will console write due to the condition being checked after
             // executing the desired code
 
-            // BUILD A GUESSING GAME -------------------------------------------
-
-            string secretWord = "Bunnies";
-            string usersAnswer = "";
-            int guessCount = 0;
-            int guessLimit = 5;
-            bool outOfGuesses = false;
-
-            // Keeps asking user if the guess is wrong and they're not out of
-            // guesses
-            while (usersAnswer != secretWord && !outOfGuesses)
-            {
-                // if the guessCount is under the limit (5) then prompt question
-                if (guessCount < guessLimit)
-                {
-                    Console.WriteLine("Guess the secret word: ");
-                    usersAnswer = Console.ReadLine();
-                    guessCount++;
-                }
-                // else the outOfGuesses is true
-                else { 
-                    outOfGuesses = true;
-                }
-
-            }
-
-            // If outOfGuesses is true/the user is out of guesses, then error out
-            if (outOfGuesses)
-            {
-                Console.WriteLine("Sorry, you've run out of guesses");
-            }
-            // If the user wins, then congratulate
-            else
-            {
-                Console.WriteLine("You got it!");
-            }
-
-            // Challenge - use a do while loop to build this game
 
             // FOR LOOPS -------------------------------------------------------
 
+            // - Keep track of iterarating variable (i = 1) changes every time going through the loop
+            // - Going through a loop but with a variable
+            // - Have a variable that we're using constantly through the loop
+            // - More compact
+            // - Easier to access
+
+            // While loop example/breakdown
+            int j = 1;
+            while(j <= 5)
+            {
+                Console.WriteLine(j);
+                j++;
+            }
 
 
+            // Parameters a for loop takes:
+            // 1. Initialise the varaible "i"
+            // 2. Write out the loop conidition (how long to loop for)
+            // 3. Incremet "i"
+            // - Check the condition, if true, then execute code and increment
+            // "i", check the condition, if true, execute etc.
+
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            // Array of lucky numbers
+            int[] luckyNums = { 4, 8, 12, 16, 20 };
+
+            // k = 0 bc array index equal to 0
+            // luckyNums.Length - get the length of the array
+            // k < luckyNums.Length - less than due to index position. If <=
+            // then we are getting luckyNum[6]
+            for (int k = 0; k < luckyNums.Length; k++)
+            {
+                Console.WriteLine(luckyNums[k]);
+            }
+
+            // 2D Array --------------------------------------------------------
+            // - Arrays within an array
+            // - 
+
+            int[,] numberGrid = {
+                { 1,2 },
+                { 3,4 },
+                { 5,6 }
+            };
+
+            Console.WriteLine(numberGrid[0, 1]);
+            // Result = 2
         }
         // Main Method ends ====================================================
 
@@ -412,6 +423,58 @@ namespace cstutorial
 
             return dayName;
 
+        }
+
+
+        // BUILD A GUESSING GAME -----------------------------------------------
+
+        static string GuessingGame()
+        {
+            string secretWord = "Bunnies";
+            string usersAnswer = "";
+            int guessCount = 0;
+            int guessLimit = 5;
+            bool outOfGuesses = false;
+
+            // Keeps asking user if the guess is wrong and they're not out of
+            // guesses
+            while (usersAnswer != secretWord && !outOfGuesses)
+            {
+                // if the guessCount is under the limit (5) then prompt question
+                if (guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the secret word: ");
+                    usersAnswer = Console.ReadLine();
+                    guessCount++;
+                }
+                // else the outOfGuesses is true
+                else
+                {
+                    outOfGuesses = true;
+                }
+
+            }
+
+            // If outOfGuesses is true/the user is out of guesses, then error out
+            if (outOfGuesses)
+            {
+                Console.WriteLine("Sorry, you've run out of guesses");
+                return "No guesses";
+            }
+            // If the user wins, then congratulate
+            else
+            {
+                Console.WriteLine("You got it!");
+                return "Correct";
+            }
+
+            // Challenge - use a do while loop to build this game
+        }
+
+        static string forLoops()
+        {
+
+            return "";
         }
     }
 }
