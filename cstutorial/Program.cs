@@ -296,7 +296,7 @@ namespace cstutorial
 
             // Array of lucky numbers
             int[] luckyNums = { 4, 8, 12, 16, 20 };
-
+            /**/
             // k = 0 bc array index equal to 0
             // luckyNums.Length - get the length of the array
             // k < luckyNums.Length - less than due to index position. If <=
@@ -307,8 +307,10 @@ namespace cstutorial
             }
 
             // 2D Array --------------------------------------------------------
-            // - Arrays within an array
-            // - 
+            /*
+                - Arrays within an array
+                - [,] = Tells C# we want a 2d array
+            */
 
             int[,] numberGrid = {
                 { 1,2 },
@@ -317,7 +319,23 @@ namespace cstutorial
             };
 
             Console.WriteLine(numberGrid[0, 1]);
-            // Result = 2
+            // Result = 2 (accessing the first array and the 2 item in the array
+            // using index position)
+
+            // If we don't know what elements/data are going into the array we
+            // can still prepare the structure.
+
+            // [2,3] = Defining hte number of rows and number of columns
+
+            int[,] myArray = new int[2, 3];
+
+            // CODE COMMENTS --------------------------------------------------------
+
+            // = Single line comment
+
+            /*
+                Multiline comment
+             */
         }
         // Main Method ends ====================================================
 
