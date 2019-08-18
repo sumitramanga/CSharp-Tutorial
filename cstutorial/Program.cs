@@ -1,5 +1,4 @@
 ﻿using System;
-
 /*
     - "using System;" is a command
     - Configuring the file
@@ -84,7 +83,7 @@ namespace cstutorial
 
             // Get the number of characers within a string
             var getLength = newLine.Length;
-            Console.WriteLine(getLength);
+            //Console.WriteLine(getLength);
 
 
 
@@ -151,18 +150,13 @@ namespace cstutorial
 
             /*
                 1. We are holding the app from doing anything until the user
-                puts in their name.
-
+                puts in their name:
                 Console.WriteLine("Enter your name: ");
-            */
 
-            /*
-                2. The name typed out is stored in the usersName variable
+                2. The name typed out is stored in the usersName variable:
                 string usersName = Console.ReadLine();
-            */
 
-            /*
-                3. Write Hello and the name
+                3. Write Hello and the name:
                 Console.WriteLine("Hello " + usersName);
              */
 
@@ -339,7 +333,7 @@ namespace cstutorial
             int j = 1;
             while(j <= 5)
             {
-                Console.WriteLine(j);
+                //Console.WriteLine(j);
                 j++;
             }
 
@@ -409,6 +403,155 @@ namespace cstutorial
                 Multiline comment
                 Woohoo!
             */
+
+            // EXCEPTION HANDLING ----------------------------------------------
+
+            // Catch the code so we can handle it
+            // try catch block here
+            // testing the risky code
+            // if the code breaks then print out error
+            try
+            {
+                Console.WriteLine("Number: ");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Another Number: ");
+                int number2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(number1 / number2);
+            }
+            catch (DivideByZeroException e)
+            {
+                // (Exception e) - taking the Exception parameter which we've
+                // named e, go into the exception parameter and get the official
+                // error message
+                Console.WriteLine(e.Message);
+
+                // two scenarios can happen so we can define specific exceptions
+                // catch (DivideByZeroException e) will only catch the 0 divison
+                // error but if letter input error will terminate the app as we
+                // haven't caught that error too
+            }
+            catch (FormatException e)
+            {
+                // can catch more than one error/exception by doing this
+                Console.WriteLine(e.Message);
+            }
+            //finally
+            //{
+            // this will Always get excecuted no matter what
+            // optinal block here
+            //}
+
+            // Search c# exception list to get all the expctions tahat could happen
+
+
+            // CLASSES AND OBJECTS ---------------------------------------------
+            // Create your own custom data types as int and string wont always
+            // be able cover it (like a mlbile phone is made of many things not
+            // just a string or just a number)
+
+            // Created a file
+
+            // Object - instance of a class, physically book inside our program
+
+            // Classes & Objects should be within the project (cstutorial not cstutorial (master))or it won't pick up there is a class compenet 
+
+            // this is creating the book
+
+            // create a book object here
+            // we have a parameter we have to pass through
+            //Book book1 = new Book("mike");
+
+            // define the objects properties
+            // old way without public Book constructor
+            //book1.title = "harry potter";
+            //book1.author = "JK Rowling";
+            //book1.pages = 401;
+
+
+            // Console.WriteLine(book2.author);
+            // result = 'someone'
+
+
+            // CONSTRUCTORS  ---------------------------------------------------
+
+            // - special method u can put into a c# class which is caleed whe ncreating hta object
+            
+            // here we are injecting the called class with values through the parameters
+            Book book2 = new Book("lord of the rings", "someone", 700);
+
+            // can also change the value after calling the class
+            book2.title = "the hobbit";
+
+            Console.WriteLine(book2.title);
+            //result = the hobbit
+
+
+            // OBJECT METHODS --------------------------------------------------
+
+            // a method that we can define inside out class ojebcts of thr class find out info or modify info
+
+            // Create staff members here
+            Staff staff1 = new Staff("Jim", "BA", 28);
+            Staff staff2 = new Staff("Pam", "Designer", 22);
+
+            // we check each staff memebers ages and return a boolean value of true or false
+            Console.WriteLine(staff1.Is25AndOver());
+            Console.WriteLine(staff2.Is25AndOver());
+
+            // GETTERS AND SETTERS  --------------------------------------------
+            // 2 types of methods, defined in classes, contorls access of the attricute of the classes, makes classes more secure, define what data is value
+            // get - 
+            // set -
+
+            Movie avengersEndgame = new Movie("Avengers: Endgame", "Anthony Russo", "nope");
+            Movie spiderManFarFromHome = new Movie("Spider-Man: Far From Home", "Jon Watts", "PG-13");
+
+            // Rating is the class
+            Console.WriteLine(avengersEndgame.Rating);
+
+            // STATIC ATTRIBUTES IN CLASSES ------------------------------------
+
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Console.WriteLine(Song.songCount);
+            // result = 1
+            Song someSong = new Song("some song", "some cool band", 300);
+            Console.WriteLine(Song.songCount);
+            // result = 2
+
+            Console.WriteLine(someSong.getSongCount());
+            // result = 2
+            // individual song count is being accessed here
+
+
+            // STATIC METHODS --------------------------------------------------
+
+            // method that belongs to the clas. dont hav to make na instances of that class to use it
+            UsefulTools.SayHelloThere("Sumi");
+            // result = hello sumi
+
+            // can still do this
+            UsefulTools useful = new UsefulTools();
+
+            // cant create an instance with the Math class as it is static
+            // if we want this for the usefulTools class then we need to declare static in the class
+
+            // INHERITANCE -----------------------------------------------------
+
+            // class indianChef : chef { }
+            // this will inherant all the chef class functionality
+            // super class is the chef class. indainChef is the sub class
+
+            // public virtual void
+            // put this on the super class
+            // virtual = method can get overiden in any sub class
+
+            // public override void
+            // put his on the sub class
+
+
+
+
         }
         // Main Method ends ====================================================
 
@@ -427,7 +570,7 @@ namespace cstutorial
              - SayHi take parameters/arguement, which is a name
         */
 
-        
+
         static void SayHi(string name, int age)
         {
             Console.WriteLine("Hello " + name + age);
