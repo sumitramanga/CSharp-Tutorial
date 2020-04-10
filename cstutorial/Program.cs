@@ -266,7 +266,8 @@ namespace cstutorial
             int indexNum = 1;
 
             /*
-               - Speific a condition like an if statement when checking a conditon
+               - Speific a condition like an if statement when checking a
+               // conditon
                - Continusly executing it until condiiton is false
             */
 
@@ -442,7 +443,8 @@ namespace cstutorial
             // optinal block here
             //}
 
-            // Search c# exception list to get all the expctions tahat could happen
+            // Search c# exception list to get all the expctions tahat could
+            // happen
 
 
             // CLASSES AND OBJECTS ---------------------------------------------
@@ -454,7 +456,8 @@ namespace cstutorial
 
             // Object - instance of a class, physically book inside our program
 
-            // Classes & Objects should be within the project (cstutorial not cstutorial (master))or it won't pick up there is a class compenet 
+            // Classes & Objects should be within the project (cstutorial not
+            // cstutorial (master))or it won't pick up there is a class compenet 
 
             // this is creating the book
 
@@ -475,9 +478,11 @@ namespace cstutorial
 
             // CONSTRUCTORS  ---------------------------------------------------
 
-            // - special method u can put into a c# class which is caleed whe ncreating hta object
-            
-            // here we are injecting the called class with values through the parameters
+            // - special method u can put into a c# class which is caleed when
+            // creating hta object
+
+            // here we are injecting the called class with values through the
+            // parameters
             Book book2 = new Book("lord of the rings", "someone", 700);
 
             // can also change the value after calling the class
@@ -489,18 +494,22 @@ namespace cstutorial
 
             // OBJECT METHODS --------------------------------------------------
 
-            // a method that we can define inside out class ojebcts of thr class find out info or modify info
+            // a method that we can define inside out class ojebcts of thr class
+            // find out info or modify info
 
             // Create staff members here
             Staff staff1 = new Staff("Jim", "BA", 28);
             Staff staff2 = new Staff("Pam", "Designer", 22);
 
-            // we check each staff memebers ages and return a boolean value of true or false
+            // we check each staff memebers ages and return a boolean value of
+            // true or false
             Console.WriteLine(staff1.Is25AndOver());
             Console.WriteLine(staff2.Is25AndOver());
 
             // GETTERS AND SETTERS  --------------------------------------------
-            // 2 types of methods, defined in classes, contorls access of the attricute of the classes, makes classes more secure, define what data is value
+            // 2 types of methods, defined in classes, contorls access of the
+            // attricute of the classes, makes classes more secure, define what
+            // data is value
             // get - 
             // set -
 
@@ -526,7 +535,8 @@ namespace cstutorial
 
             // STATIC METHODS --------------------------------------------------
 
-            // method that belongs to the clas. dont hav to make na instances of that class to use it
+            // method that belongs to the clas. dont hav to make na instances of
+            // that class to use it
             UsefulTools.SayHelloThere("Sumi");
             // result = hello sumi
 
@@ -534,7 +544,8 @@ namespace cstutorial
             UsefulTools useful = new UsefulTools();
 
             // cant create an instance with the Math class as it is static
-            // if we want this for the usefulTools class then we need to declare static in the class
+            // if we want this for the usefulTools class then we need to declare
+            // static in the class
 
             // INHERITANCE -----------------------------------------------------
 
@@ -709,7 +720,8 @@ namespace cstutorial
 
             }
 
-            // If outOfGuesses is true/the user is out of guesses, then error out
+            // If outOfGuesses is true/the user is out of guesses, then error
+            // out
             if (outOfGuesses)
             {
                 Console.WriteLine("Sorry, you've run out of guesses");
